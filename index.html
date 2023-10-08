@@ -13,30 +13,38 @@
 <body>
   
   <header>
-    <nav>
-      <ul>
-        <li>Shop</li>
-        <li>About Us</li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+
+      <img src="images/doughp-logo.webp" alt="">
+      <nav>
+        <ul>
+          <li>Shop</li>
+          <li>About Us</li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <div>
-        <img src="images/product-shot-1.webp" alt="">
-        <img src="images/product-shot-2.webp" alt="">
-        <img src="images/product-shot-3.webp" alt="">
-        <img src="images/product-shot-4.webp" alt="">
+    <section id="product-images">
+      <div class="wrapper">
+        <div class="top-grid">
+          <img id="span-image" src="images/product-shot-1.webp" alt="">
+          <img src="images/product-shot-2.webp" alt="">
+          <img src="images/product-shot-3.webp" alt="">
+          <img src="images/product-shot-4.webp" alt="">
+        </div>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h1>Valentine's Day "Bite Me"</h1>
+    <section id="product-description">
+      <div class="wrapper">
+        <div class="title">
+          <h1>Valentine's Day "Bite Me"</h1>
 
-        <h5>Limited edition</h5>
-        <h4>Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</h4>
+          <h4>Limited edition</h4>
+          <h4>Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</h4>
+        </div>
 
         <p>$55.00</p>
 
@@ -44,12 +52,15 @@
 
         <p>In this Valentine's Day 3-pack you'll receive Red Velvet Vixen, Peanut Butter Kiss, and our classic Ride or Die, chocolate chip. It makes a perfect gift your Valentine can take a bite out of!</p>
 
-        <p>Add to cart</p>
+        <div id="button">
+          <a class="button">Add to cart</a>
+        </div>
+        
       </div>
     </section>
 
-    <section>
-      <div>
+    <section id="about">
+      <div class="wrapper">
         <h2>Behind the Dough</h2>
 
         <p>Here's the scoop from Doughp's founder on how this flavor came to be: "I first made Red Velvet on a total whim, just a few months into business in 2017. One day, while mixing up Doughp at our original commercial kitchen in Oakland, I left to grab some lunch at a nearby bakery.
@@ -58,11 +69,11 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section id="reviews">
+      <div class="wrapper">
         <h2>What people are saying</h2>
 
-          <div>
+          <div class="review-flex">
             <article>
               <p>"It’s just so Doughp! I didn’t know what to expect, but I am so addicted now. Every flavor was delicious and I honestly can’t wait to try even more!"</p>
 
@@ -84,10 +95,10 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section id="recommendations">
+      <div class="wrapper">
         <h2>Try it with...</h2>
-        <ul>
+        <ul class="rec-grid">
             <li>
               <img src="/images/ride-or-die.webp" alt="">
               <h3>Ride or Die</h3>
@@ -118,8 +129,10 @@
 
 
 
-  <footer>
-    <small>&copy; 2023 Doughp Cookie Dough</small>
+  <footer id="footer">
+      <div class="wrapper">
+        <small>&copy; 2023 Doughp Cookie Dough</small>
+      </div>
   </footer>
 
 </body>
