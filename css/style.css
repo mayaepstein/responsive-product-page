@@ -38,7 +38,7 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2em 2em;
+  padding: 1em 2em;
 }
 
 p {
@@ -83,7 +83,7 @@ nav ul li {
   color:#fff;
   padding: .75em;
   border-radius: .25em;
-  font-size: var(small);
+  font-size: var(--font-size-sm);
 }
 
 #button {
@@ -93,6 +93,10 @@ nav ul li {
 h1 {
   font-size: var(--font-size-xl);
   font-weight: 500;
+}
+
+h2 {
+  font-size: var(--font-size-md);
 }
 
 h4 {
@@ -106,8 +110,70 @@ h1 + h4 {
 }
 
 .title {
-  margin: 0;
-  line-height: 1;
+  padding: 0;
 }
 
+#about h2,
+#reviews h2,
+#recommendations h2 {
+  text-align: center;
+}
 
+#reviews {
+  background-color: black;
+  color: #fff;
+}
+
+#reviews article {
+  padding: 0 1.5em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+.rec-grid li {
+  background-color: #f9f9f9;
+  border-radius: .25em;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.rec-grid li img {
+  border-radius: .25em;
+}
+
+#footer {
+  text-align: center;
+}
+
+@media (min-width: 40em){
+
+  .top-grid #span-image {
+    grid-column: auto;
+  }
+  .top-grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .about-flex {
+    display: flex;
+    gap: 1.5em;
+  }
+  .review-flex {
+    display: flex;
+  }
+  .rec-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  }
+}
