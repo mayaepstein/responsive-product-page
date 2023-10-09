@@ -41,6 +41,13 @@ img {
   padding: 1em 2em;
 }
 
+#header,
+#product-flex,
+#recommendations {
+  border-bottom: #f9f9f9 .25em solid;
+  padding-bottom: 1em;
+}
+
 p {
   font-size: var(--font-size-base);
 }
@@ -171,9 +178,18 @@ h1 + h4 {
   }
   .review-flex {
     display: flex;
+    gap: 2em;
   }
   .rec-grid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   }
+}
+
+@media (min-width: 60em){
+  
+  #product-flex {
+    display: flex;
+  }
+
 }
