@@ -61,7 +61,7 @@ header div {
 nav ul {
   display: flex;
   list-style-type: none;
-  padding-left: none;
+  padding-left: 0;
   gap: 3em;
 }
 
@@ -105,11 +105,16 @@ h1 {
 h2 {
   font-size: var(--font-size-md);
 }
+h3 {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+}
 
 h4 {
   font-size: var(--font-size-sm);
   font-weight: 400;
 }
+
 
 h1 + h4 {
   text-transform: uppercase;
